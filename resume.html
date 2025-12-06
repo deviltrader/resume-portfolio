@@ -1,19 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Resume — Syed Abdulla</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Syed Abdulla S</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header small">
     <div class="container header-inner">
       <div class="brand">
-        <h1>Syed Abdulla</h1>
-        <p class="subtitle">Resume</p>
+        <a class="logo">SAS</a>
+        <div>
+          <h1 class="name">Syed Abdulla S</h1>
+          <p class="tag">Resume</p>
+        </div>
       </div>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html" class="nav-link">Home</a>
@@ -24,46 +26,51 @@
   </header>
 
   <main class="container">
-    <article class="resume-card">
-      <section aria-labelledby="profile">
-        <h2 id="profile">Profile</h2>
-        <p>A motivated Computer Science graduate with hands-on experience in building responsive websites and small automation tools. Passionate about clean code and intuitive UI/UX.</p>
-      </section>
-
-      <section aria-labelledby="education">
-        <h2 id="education">Education</h2>
-        <ul>
-          <li><strong>B.E. Computer Science</strong> — University Name, 2022–2025</li>
-          <li>Relevant coursework: Data Structures, OS, DBMS, Web Development</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="experience">
-        <h2 id="experience">Projects & Experience</h2>
-        <article>
-          <h3>Portfolio Website</h3>
-          <p>Built a responsive multi-page portfolio with semantic HTML, CSS and JS; hosted on GitHub Pages.</p>
-        </article>
-        <article>
-          <h3>Task Tracker (Mini project)</h3>
-          <p>Prototype using Python + Flask for backend and vanilla JS for frontend. Features: CRUD tasks and simple analytics.</p>
-        </article>
-      </section>
-
-      <section aria-labelledby="skills2">
-        <h2 id="skills2">Technical Skills</h2>
-        <div class="grid">
-          <div class="chip">HTML / Semantic</div>
-          <div class="chip">CSS / Flexbox / Grid</div>
-          <div class="chip">JavaScript / jQuery</div>
-          <div class="chip">Python</div>
-          <div class="chip">Git</div>
+    <article class="resume-card card">
+      <div class="resume-head">
+        <div>
+          <h2>Syed Abdulla S</h2>
+          <p class="muted">B.E Computer Science — SJMIT Chitradurga • gulmansyedabdul@gmail.com • 8660035879</p>
         </div>
+        <div class="download">
+          <button class="btn" onclick="window.print()">Print / Save PDF</button>
+        </div>
+      </div>
+
+      <section>
+        <h3>Profile</h3>
+        <p>Passionate guy with multiple hobbies, eager to learn everything. I build small useful tools, experiment with automation, and explore trading systems.</p>
       </section>
 
-      <section aria-labelledby="download">
-        <h2 id="download">Download</h2>
-        <p><a class="btn" href="#">Download PDF (placeholder)</a></p>
+      <section class="two-col">
+        <div>
+          <h3>Education</h3>
+          <ul>
+            <li><strong>B.E. Computer Science</strong> — SJMIT Chitradurga</li>
+          </ul>
+
+          <h3>Projects</h3>
+          <ul>
+            <li><strong>Portfolio Website</strong> — Modern multi-page website (HTML/CSS/JS), hosted on GitHub Pages.</li>
+            <li><strong>Task Tracker Prototype</strong> — Python + Flask CRUD app for managing tasks and simple analytics.</li>
+            <li><strong>Jarvis-like Voice Assistant (Prototype)</strong> — Offline wake-word and voice control for Mac (ongoing).</li>
+          </ul>
+        </div>
+
+        <aside>
+          <h3>Top Skills</h3>
+          <div class="grid-col">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">Flask</span>
+            <span class="chip">Git</span>
+          </div>
+
+          <h3>Languages</h3>
+          <p>Hindi, English, Kannada, Japanese, Urdu</p>
+        </aside>
       </section>
 
       <p class="back-link"><a href="index.html">← Back to Home</a></p>
@@ -72,7 +79,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year2"></span> Syed Abdulla</small>
+      <small>© <span id="year2"></span> Syed Abdulla S</small>
     </div>
   </footer>
 </body>
