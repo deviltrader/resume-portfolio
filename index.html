@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Syed Abdulla — Portfolio</title>
+  <title>Syed Abdulla S — Portfolio</title>
+
   <link rel="stylesheet" href="css/style.css">
-  <!-- jQuery CDN (used for small animations) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
@@ -13,9 +14,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <h1>Syed Abdulla</h1>
-        <p class="subtitle">Web & Software | Problem Solver</p>
+        <a href="index.html" class="logo">SAS</a>
+        <div>
+          <h1 class="name">Syed Abdulla S</h1>
+          <p class="tag">Forex Trader</p>
+        </div>
       </div>
+
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="resume.html" class="nav-link">Resume</a>
@@ -25,49 +30,63 @@
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="hero card">
       <div class="hero-left">
-        <h2>Hello — I build useful things</h2>
-        <p>I’m a developer working on frontend, backend and automation. This site contains my resume and bio-data — responsive, accessible and ready to host.</p>
+        <h2>Hello — I build & trade</h2>
+        <p class="lead">
+          Passionate guy with multiple hobbies, eager to learn everything — building projects, automating tasks and exploring trading systems.
+        </p>
+
         <div class="cta-row">
           <a class="btn" href="resume.html">View Resume</a>
           <a class="btn btn-outline" href="biodata.html">View Bio-data</a>
         </div>
-      </div>
-      <div class="hero-right" aria-hidden="true">
-        <!-- decorative card -->
-        <div class="card">
-          <h3>Quick Facts</h3>
-          <ul>
-            <li>Location: Bangalore, India</li>
-            <li>Education: B.E. Computer Science (2025)</li>
-            <li>Skills: HTML, CSS, JS, Python</li>
-          </ul>
+
+        <div class="contact-mini">
+          <div><strong>Email:</strong> <a href="mailto:gulmansyedabdul@gmail.com">gulmansyedabdul@gmail.com</a></div>
+          <div><strong>Phone:</strong> 8660035879</div>
+          <div><strong>Location:</strong> Chitradurga, India</div>
         </div>
       </div>
+
+      <aside class="hero-right" aria-hidden="true">
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/140?text=SA" alt="profile" class="avatar">
+          <h3>Quick Facts</h3>
+          <ul>
+            <li><strong>Education:</strong> B.E Computer Science — SJMIT Chitradurga</li>
+            <li><strong>Top Skills:</strong> Web Dev, Python, Automation</li>
+            <li><strong>Languages:</strong> Hindi, English, Kannada, Japanese, Urdu</li>
+          </ul>
+        </div>
+      </aside>
     </section>
 
-    <section class="skills" aria-labelledby="skills-title">
+    <section class="skills card" aria-labelledby="skills-title">
       <h3 id="skills-title">Skills & Tools</h3>
       <div class="grid">
-        <div class="chip">HTML & Semantic Markup</div>
-        <div class="chip">CSS / Responsive Design</div>
-        <div class="chip">JavaScript & jQuery</div>
-        <div class="chip">Python</div>
-        <div class="chip">Git & GitHub</div>
-        <div class="chip">Basic DevOps</div>
+        <span class="chip">HTML & Semantic Markup</span>
+        <span class="chip">CSS / Responsive Design</span>
+        <span class="chip">JavaScript & jQuery</span>
+        <span class="chip">Python & Flask</span>
+        <span class="chip">Automation / Voice Assistants</span>
+        <span class="chip">Git & GitHub</span>
       </div>
     </section>
 
-    <section class="contact" aria-labelledby="contact-title">
-      <h3 id="contact-title">Contact</h3>
-      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <section class="projects card" aria-labelledby="projects-title">
+      <h3 id="projects-title">Selected Projects</h3>
+      <ul class="projects-list">
+        <li><strong>Portfolio Website</strong> — Modern multi-page personal site (this project) — responsive and ready to deploy.</li>
+        <li><strong>Task Tracker Prototype</strong> — Python + Flask mini project: CRUD tasks and basic analytics.</li>
+        <li><strong>Jarvis-like Voice Assistant (Prototype)</strong> — Local wake-word, voice control and Mac automation (in development).</li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Syed Abdulla — Portfolio</small>
+      <small>© <span id="year"></span> Syed Abdulla S • Built with curiosity</small>
     </div>
   </footer>
 </body>
